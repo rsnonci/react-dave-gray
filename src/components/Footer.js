@@ -1,10 +1,9 @@
 import React from 'react'
 
-const Footer = () => {
-    const today = new Date();
+const Footer = ({totalItems}) => {
     return (
         <footer>
-            Copyright &copy;{today.getFullYear()}
+            {totalItems} List {totalItems === 1? 'item' : 'items'}
         </footer>
     )
 }
